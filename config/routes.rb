@@ -1,9 +1,73 @@
 Rails.application.routes.draw do
+  get 'publishers/new'
+
+  get 'publishers/create'
+
+  get 'publishers/update'
+
+  get 'publishers/edit'
+
+  get 'publishers/destroy'
+
+  get 'publishers/index'
+
+  get 'publishers/show'
+
+  get 'authors/new'
+
+  get 'authors/create'
+
+  get 'authors/update'
+
+  get 'authors/edit'
+
+  get 'authors/destroy'
+
+  get 'authors/index'
+
+  get 'authors/show'
+
+  get 'catagories/new'
+
+  get 'catagories/create'
+
+  get 'catagories/update'
+
+  get 'catagories/edit'
+
+  get 'catagories/destroy'
+
+  get 'catagories/index'
+
+  get 'catagories/show'
+
+  get 'books/new'
+
+  get 'books/create'
+
+  get 'books/update'
+
+  get 'books/edit'
+
+  get 'books/destroy'
+
+  get 'books/index'
+
+  get 'books/show'
+
+  get 'about/index'
+    
+    get 'about' => "about#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static_pages#index'
+  root 'books#index'
+    resources :books
+    resources :authors
+    resources :catagories
+    resources :publishers
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
