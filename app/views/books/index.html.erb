@@ -5,8 +5,11 @@
         
 		<div class="col-md-3 col-sm-3">
             <h3><%= book.title%></h3>
+            <div class="book-image">
             <%= image_tag(book.coverpath) %>
+                </div>
 			<%= link_to 'Read More', book_path(book), class:'btn btn-primary' %>
+           
                 </div>
          <%end%>
         <%end%>

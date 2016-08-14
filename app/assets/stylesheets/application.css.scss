@@ -14,16 +14,27 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+html, body {
+  margin: 0px;
+  padding: 0px;
 
+}
 
 body{
+
+background-repeat: no-repeat;
 padding-bottom: 50px;
 font-family: 'Arial', sans-serif;
 font-size:14px;
 color:#666;
 line-height: 1.5em;
+height: 100%;
 }
 
+.blocks{
+    float: left;
+    width: 100%;
+}
 
 header{
     background:#333;
@@ -34,32 +45,43 @@ header{
 }
 
 footer{
-    background:#333;
-    color:white;
-    height:60px;
-    margin-top: 120 px;
-    padding-top: 20 px;
+	background:#333;
+    color: aliceblue;
+	width:100%;
+	position:fixed;
     text-align: center;
+	bottom:0;
+	left:0;
+    padding-top: 10px;
 
 }
+
 #books-index img{
     width:100%;
+    
     padding: 3px;
-    border:1px #ccc solid;
-    
-    
+    border:1px #ccc solid;   
 }
 
 #books-index {
 text-align: center;
+align-content: center;
 }
 
 #books-index h3{
     height: 50px;
 }
+
 #books-index .btn{
 display: block;
-margin-top: 20px;}
+margin-top: 20px;
+}
+.book-image{
+display:flex;
+}
+
+
+
 
 
 #books-show h2{
@@ -70,6 +92,12 @@ padding:10px;}
 {
 float:left;
 width:40%;
+margin-right: 10px;
+}
+
+img.resize{
+width:540px; /* you can use % */
+height: auto;
 }
 .books-show-right{
 float:left;
@@ -78,6 +106,9 @@ float:left;
 margin:20px 0 0 70px;
 }
 
-
-
+img {
+    max-width: 100%;
+    max-height: 100%;
+    padding:10px;
+}
 
