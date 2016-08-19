@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+    
+    root "static_pages#index", page: "home"
+  
   get 'users/new'
 
   get 'publishers/new'
@@ -65,7 +68,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'books#index'
+
     resources :books
     resources :authors
     resources :catagories

@@ -1,46 +1,11 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
- <script>
-  $(function() {
-    $(".rslides").responsiveSlides();
-  });
-</script>
-
-
-<div class="container col-md-12">
-<div class="row">
- <ul class="rslides">
-     <li><%= image_tag("covers/head_first_php.jpg") %></li>
-     <li><%= image_tag("covers/ruby_on_rails_power.jpg") %></li>
-    <li><%= image_tag("covers/html5_trainer.jpg") %></li>
-     <li><%= image_tag("covers/html5_css3.jpg") %></li>
-     <li><%= image_tag("covers/the_rails_3_way.jpg") %></li>
-        
-</ul>
-</div>
-</div>
-
-
-
-<script>
-/*! ResponsiveSlides.js v1.55
- * http://responsiveslides.com
- * http://viljamis.com
- *
- * Copyright (c) 2011-2012 @viljamis
- * Available under the MIT license
- */
-
-/*jslint browser: true, sloppy: true, vars: true, plusplus: true, indent: 2 */
-
 (function ($, window, i) {
   $.fn.responsiveSlides = function (options) {
 
     // Default settings
     var settings = $.extend({
       "auto": true,             // Boolean: Animate automatically, true or false
-      "speed": 100,             // Integer: Speed of the transition, in milliseconds
-      "timeout": 2000,          // Integer: Time between slide transitions, in milliseconds
+      "speed": 500,             // Integer: Speed of the transition, in milliseconds
+      "timeout": 4000,          // Integer: Time between slide transitions, in milliseconds
       "pager": false,           // Boolean: Show pager, true or false
       "nav": false,             // Boolean: Show navigation, true or false
       "random": false,          // Boolean: Randomize the order of the slides, true or false
@@ -414,5 +379,3 @@
 
   };
 })(jQuery, this, 0);
-
-</script>
